@@ -1,0 +1,25 @@
+{
+  "name": "-y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "env2": "^2.2.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.12",
+    "pg": "^7.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "csr": "nodemon csr/server.js",
+    "ssr": "nodemon ssr/server.js",
+    "hbs": "nodemon hbs/server.js",
+    "dev": "nodemon final/server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
