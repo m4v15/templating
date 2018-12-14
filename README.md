@@ -1,4 +1,4 @@
-## Templating example
+# SSR/Templating
 
 Example with CMS app, client side rendering, rudimentary templating, handlebars & express handlebars versions.
 
@@ -46,3 +46,8 @@ Server stored in the `/hbs/` folder.
 Server stored in the `/final/` folder.
 
 `npm run dev`
+
+
+### More to come on this repo:
+
+[Adding another page (probably a 404) to show how HBS/express-handlebars can help with scaling/what layouts mean](https://github.com/m4v15/templating/issues/2)
