@@ -9,11 +9,6 @@ Example with CMS app, client side rendering, rudimentary templating, handlebars 
 3. Make a `config.env` file and add a postgres database url as DB_URL
 4. Build the database: `node src/database/db_build.js`
 
-  "csr": "nodemon csr/server.js",
-    "ssr": "nodemon ssr/server.js",
-    "hbs": "nodemon hbs/server.js",
-    "dev": "nodemon final/server.js"
-
 ### client side rendering
 
 Client and server stored in the `/csr/` folder.
