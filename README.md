@@ -1,6 +1,6 @@
 ## Templating example
 
-Example CMS app, client side rendering, rudimentary templating, handlebars & express handlebars versions.
+Example with CMS app, client side rendering, rudimentary templating, handlebars & express handlebars versions.
 
 ### How to run
 
