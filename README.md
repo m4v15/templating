@@ -2,6 +2,20 @@
 
 Example with CMS app, client side rendering, rudimentary templating, handlebars & express handlebars versions.
 
+## Philosophy of this repo:
+
+1. Show the difference between CSR and SSR and why SSR can be good in some scenarios (faster!)
+1. Show the reason templating engines exist (easier to do SSR)
+1. Show how to use HBS alone
+1. Show why/how to use HBS with express, using express-handlebars (once it's set up, generally easier than just using handlebars directly)
+
+To acheive **1**, run both `csr` and `ssr` folders and then use dev tools to check out the requests. Use some throttling to show how much smoother an SSR app *can* be (but remember, this isn't always the best approach!)
+
+To acheive **2 & 3** look at code of `ssr` vs. `hbs` folders and see how it is easier to read and write, and can be less fragile.
+
+To acheive **4**, compare `hbs` with `final` folder to see how you don't have to do the fiddly compiling and calling (this is more scaleable, might be hard to see the benefits here - it also helps with registering partials and helper functions.
+
+
 ### How to run
 
 1. `git clone git@github.com:m4v15/templating.git && cd templating`
