@@ -13,7 +13,7 @@ To acheive **1**, run both `csr` and `ssr` folders and then use dev tools to che
 
 To acheive **2 & 3** look at code of `ssr` vs. `hbs` folders and see how it is easier to read and write, and can be less fragile.
 
-To acheive **4**, compare `hbs` with `final` folder to see how you don't have to do the fiddly compiling and calling (this is more scaleable, might be hard to see the benefits here - it also helps with registering partials and helper functions.
+To acheive **4**, compare `hbs` with `final` folder to see how you don't have to do the fiddly compiling and calling (this is more scaleable, might be hard to see the benefits here - it also helps with registering partials and helper functions. For now, you can see how using `express-handlebars` helps with not having to read files and compile it yourself, and you can use layouts, as we do for the error page (compare error non-DRY code in `hbs` folder with more DRY stuff in `final`
 
 
 ### How to run
