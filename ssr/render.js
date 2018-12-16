@@ -29,8 +29,6 @@ ${bookList}
 	</ul>
 </body>
 
-</script>
-
 </html>`
 
 module.exports = {
