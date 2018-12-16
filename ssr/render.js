@@ -1,9 +1,9 @@
 const makeBookList = (booksArray) => {
-  let list = ``
-  booksArray.forEach(book => {
-    list += `<li class="ph3 pv2 bb b--light-silver">${book.name}</li>`
-  })
-  return list
+	let list = ``
+	booksArray.forEach(book => {
+		list += `<li class="ph3 pv2 bb b--light-silver">${book.name}</li>`
+	})
+	return list
 }
 
 const makeHTML = (bookList) => `
@@ -33,7 +33,7 @@ ${bookList}
 
 </html>`
 
-module.exports {
-  makeBookList,
-    makeHTML
+module.exports = {
+	makeBookList,
+	makeHTML
 }
