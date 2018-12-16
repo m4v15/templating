@@ -20,6 +20,11 @@ app.get('/', (req, res) => {
     });
 })
 
+app.get('*', (req, res) => {
+  const status = 404
+  res.status(status).render("error", { status, message: "Sorry, we can't find that page" })
+})
+
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 
@@ -32,7 +37,7 @@ app.engine(
   })
 )
 
-const port = 5555
+const port = 3336
 app.listen(port, () => {
   console.log(`Our app is running on http://localhost:${port}`);
 });

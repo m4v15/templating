@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
     })
 });
 
-const port = 3333
+const port = 3334
 app.listen(port, () => {
   console.log(`Our app is running on http://localhost:${port}`);
 });

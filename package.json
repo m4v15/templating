@@ -18,7 +18,8 @@
     "csr": "nodemon csr/server.js",
     "ssr": "nodemon ssr/server.js",
     "hbs": "nodemon hbs/server.js",
-    "dev": "nodemon final/server.js"
+    "dev": "nodemon final/server.js",
+    "all": "npm run csr & npm run ssr & npm run hbs & npm run dev"
   },
   "author": "",
   "license": "ISC"
