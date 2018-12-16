@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   queries.getBooks()
     .then(booksArray => {
-      fs.readFile(path.join(__dirname, './main.hbs'), 'utf-8', (err, source) => {
+      fs.readFile(path.join(__dirname, 'views', 'main.hbs'), 'utf-8', (err, source) => {
         if (err) console.log(err)
         const template = handlebars.compile(source);
         const html = template({
@@ -21,6 +21,21 @@ app.get('/', (req, res) => {
           books: booksArray
         });
         res.send(html)
+      })
+    });
+})
+
+app.get('*', (req, res) => {
+  queries.getBooks()
+    .then(booksArray => {
+      fs.readFile(path.join(__dirname, 'views', 'error.hbs'), 'utf-8', (err, source) => {
+        if (err) console.log(err)
+        const template = handlebars.compile(source);
+        const html = template({
+          status: "404",
+          message: "Sorry, we can't find that page!",
+        });
+        res.status(404).send(html)
       })
     });
 })
