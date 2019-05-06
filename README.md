@@ -9,11 +9,11 @@ Example with CMS app, client side rendering, rudimentary templating, handlebars 
 1. Show how to use HBS alone
 1. Show why/how to use HBS with express, using express-handlebars (once it's set up, generally easier than just using handlebars directly)
 
-To acheive **1**, run both `csr` and `ssr` folders and then use dev tools to check out the requests. Use some throttling to show how much smoother an SSR app *can* be (but remember, this isn't always the best approach!)
+To achieve **1**, run both `csr` and `ssr` folders and then use dev tools to check out the requests. Use some throttling to show how much smoother an SSR app *can* be (but remember, this isn't always the best approach!)
 
-To acheive **2 & 3** look at code of `ssr` vs. `hbs` folders and see how it is easier to read and write, and can be less fragile.
+To achieve **2 & 3** look at code of `ssr` vs. `hbs` folders and see how it is easier to read and write, and can be less fragile.
 
-To acheive **4**, compare `hbs` with `final` folder to see how you don't have to do the fiddly compiling and calling (this is more scaleable, might be hard to see the benefits here - it also helps with registering partials and helper functions. For now, you can see how using `express-handlebars` helps with not having to read files and compile it yourself, and you can use layouts, as we do for the error page (compare error non-DRY code in `hbs` folder with more DRY stuff in `final`
+To achieve **4**, compare `hbs` with `final` folder to see how you don't have to do the fiddly compiling and calling (this is more scalable, might be hard to see the benefits here - it also helps with registering partials and helper functions. For now, you can see how using `express-handlebars` helps with not having to read files and compile it yourself, and you can use layouts, as we do for the error page (compare error non-DRY code in `hbs` folder with more DRY stuff in `final`
 
 
 ### How to run
